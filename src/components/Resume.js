@@ -308,9 +308,8 @@ const Resume = () => {
     }
   ];
   
-  // Flatten skills for the old format if needed
-  const skills = skillCategories.flatMap(category => 
-    category.skills.map(skill => ({ name: skill })));
+  // We're using skillCategories directly now, no need to flatten
+  // Removed unused variable to fix ESLint error
 
 
   return (
